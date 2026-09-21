@@ -12,7 +12,7 @@
 .crown{font-size:42px}.brand{font-family:Georgia,serif;font-size:46px;letter-spacing:5px;color:var(--gold2);margin:4px 0}
 .sub{letter-spacing:4px;color:#ddd;font-size:14px}.tag{margin-top:18px;color:var(--gold2);font-style:italic;font-size:20px}
 h2{text-align:center;color:var(--gold2);font-family:Georgia,serif;letter-spacing:3px;margin:35px 0 8px}
-.intro{text-align:center;color:var(--muted);margin-bottom:25px}
+.intro{text-align:center;color:var(--muted);margin-bottom:25px}.about{margin-top:30px}.about-card{background:linear-gradient(145deg,#171717,#0d0d0d);border:1px solid #8b6a2a;border-radius:18px;padding:26px 22px}.about-card p{color:#eee;line-height:1.7;margin:0 0 22px;text-align:center}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.stat{background:#111;border:1px solid #6f5420;border-radius:12px;padding:18px;text-align:center}.stat strong{display:block;color:var(--gold2);font-size:30px;font-family:Georgia,serif;margin-bottom:6px}.stat span{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:1px}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .card{background:linear-gradient(145deg,#151515,#090909);border:1px solid #9b7426;border-radius:16px;padding:22px;box-shadow:0 10px 30px #0008}
 .card h3{font-family:Georgia,serif;color:var(--gold2);font-size:24px;margin:0 0 5px}.price{font-size:28px;font-weight:700;color:#fff;margin-bottom:18px}
@@ -22,18 +22,15 @@ ul{padding-left:20px;margin:0}li{margin:9px 0;color:#eee;line-height:1.35}
 .btn{display:inline-block;margin-top:14px;background:var(--gold);color:#080808;text-decoration:none;font-weight:700;padding:14px 24px;border-radius:30px}
 .small{font-size:13px;color:var(--muted);margin-top:16px}
 .footer-image{display:block;width:100%;height:auto;margin:30px auto 0;border-radius:16px}
-@media(max-width:700px){.grid{grid-template-columns:1fr}.brand{font-size:34px}.card{padding:19px}}
-
-<style>
 .extras{margin-top:45px}
 .extra-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .extra-card{background:#101010;border:1px solid #76591f;border-radius:14px;padding:18px}
 .extra-card h3{color:var(--gold2);font-family:Georgia,serif;margin:0 0 8px;font-size:19px}
 .extra-price{font-weight:700;color:#fff;margin-bottom:9px}
 .extra-card p{color:#ddd;line-height:1.4;margin:0;font-size:14px}
-@media(max-width:900px){.extra-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.extra-grid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:1fr}} 
+@media(max-width:700px){.grid{grid-template-columns:1fr}.brand{font-size:34px}.card{padding:19px}}
 @media(max-width:520px){.extra-grid{grid-template-columns:1fr}}
-</style>
 </style>
 </head>
 <body>
@@ -44,6 +41,18 @@ ul{padding-left:20px;margin:0}li{margin:9px 0;color:#eee;line-height:1.35}
 <div class="sub">BARBERÍA · BAR</div>
 <div class="tag">Tu estilo, en buenas manos.</div>
 </header>
+
+<section class="about">
+  <div class="about-card">
+    <h2>CLUB MÓNACO</h2>
+    <p>En Club Mónaco combinamos barbería, bienestar y ambiente premium para darte una experiencia completa: corte con precisión, barba impecable, servicios de relajación y un espacio pensado para disfrutar mientras te renovas.</p>
+    <div class="stats">
+      <div class="stat"><strong>10+</strong><span>Años de estilo</span></div>
+      <div class="stat"><strong>100%</strong><span>Atención personalizada</span></div>
+      <div class="stat"><strong>24/7</strong><span>Ambiente lounge</span></div>
+    </div>
+  </div>
+</section>
 
 <h2>NUESTROS SERVICIOS</h2>
 <p class="intro">Elige la experiencia que va contigo.</p>
